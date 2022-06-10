@@ -23,4 +23,12 @@ A few PowerShell functions you can add to your Microsoft.PowerShell_profile.ps1 
 	New-Alias -Name gipu Git-PushUp
 	```
 	
+1. Delete any local pranch which matches the given regex
+	```
+	function Git-RMBranch($reg)
+	{
+		git branch -D (git branch --list $reg).trim()
+	}
+	New-Alias -Name girm Git-RMBranch
+	```
 1. 
