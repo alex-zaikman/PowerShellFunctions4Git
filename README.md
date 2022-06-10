@@ -33,10 +33,10 @@ A few PowerShell functions you can add to your Microsoft.PowerShell_profile.ps1 
 	```
 1. Just in case you forgot somthing really small...
 	```
-	function Git-Opps($reg)
+	function Git-Oops($reg)
 	{
 		git commit -a --ammend && git push -f 
 	}
-	New-Alias -Name gioo Git-Opps
+	New-Alias -Name gioo Git-Oops
 	
 	```
