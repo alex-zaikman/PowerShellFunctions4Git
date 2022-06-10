@@ -1,5 +1,11 @@
 Import-Module posh-git
 
+function Git-Status
+{
+	git status
+}
+New-Alias -Name gs Git-Status
+
 # Checkout into a new branch with the given name, replace any spaces with minus (-) sign.
 
 function Git-MKBranch($desc)
