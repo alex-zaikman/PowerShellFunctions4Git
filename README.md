@@ -22,6 +22,15 @@ A few PowerShell functions you can add to your Microsoft.PowerShell_profile.ps1 
 	New-Alias -Name girev Git-Revert	 
 	```
 
+1. Create a hotfix brunch, recives a suffix for the branch name a hash to base the hotfix on and a hash to cherry-pick.
+```
+function Git-HotFix($name, $base ,$hash)
+	{
+		git fetch && git checkout -b hotfix/$name $base && git cherry-pick $hash
+	}
+New-Alias -Name gihot Git-HotFix
+```
+
 1. Set the upstream branch and push changes
 	```
 	function Git-PushUp
