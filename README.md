@@ -49,3 +49,12 @@ A few PowerShell functions you can add to your Microsoft.PowerShell_profile.ps1 
 	}
 	New-Alias -Name gims Git-Home	 
 	```
+
+1. Revert files by regex
+	```
+	function Git-Revert($reg)
+	{
+		git checkout  ((git status -s).Substring(2) | findstr $reg).trim()
+	}
+	New-Alias -Name girev Git-Revert	 
+	```
