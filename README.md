@@ -14,7 +14,7 @@ A few PowerShell functions you can add to your Microsoft.PowerShell_profile.ps1 
 	New-Alias -Name gib Git-MKBranch
 	```
 	
-1. Takes ypu back to clean master
+1. Takes you back to clean master
 	```
 	function Git-Home($reg)
 	{
