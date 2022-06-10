@@ -49,7 +49,7 @@ A few PowerShell functions you can add to your Microsoft.PowerShell_profile.ps1 
 	New-Alias -Name girm Git-RMBranch
 	```
 	
-1. Just in case you forgot somthing really small before pushing...
+1. Just in case you forgot somthing really small after pushing...
 	```
 	function Git-Oops($reg)
 	{
