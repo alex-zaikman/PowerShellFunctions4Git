@@ -12,15 +12,6 @@ A few PowerShell functions you can add to your Microsoft.PowerShell_profile.ps1 
 	}
 	New-Alias -Name gib Git-MKBranch
 	```
-	
-1. Takes you back to clean master
-	```
-	function Git-Home($reg)
-	{
-		git checkout master && git fetch --prune && git pull
-	}
-	New-Alias -Name gims Git-Home	 
-	```
 
 1. Checks out files by regex
 	```
@@ -31,7 +22,7 @@ A few PowerShell functions you can add to your Microsoft.PowerShell_profile.ps1 
 	New-Alias -Name girev Git-Revert	 
 	```
 
-1. Set the upstream branch nd push changes
+1. Set the upstream branch and push changes
 	```
 	function Git-PushUp
 	{
@@ -57,4 +48,13 @@ A few PowerShell functions you can add to your Microsoft.PowerShell_profile.ps1 
 	}
 	New-Alias -Name gioo Git-Oops
 	```
-	
+		
+1. Takes you back to clean master
+	```
+	function Git-Home($reg)
+	{
+		git checkout master && git fetch --prune && git pull
+	}
+	New-Alias -Name gims Git-Home	 
+	```
+
