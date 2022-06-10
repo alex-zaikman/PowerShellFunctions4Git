@@ -1,7 +1,7 @@
 # PowerShellFunctions4Git
 A few PowerShell functions you can add to your Microsoft.PowerShell_profile.ps1 file to make working with git a :lollipop:
 1. First I strongly sugest installing and using [ posh-git](https://github.com/dahlbyk/posh-git)
-	(Dont forget to add to you ps1 ```Import-Module posh-git```)
+	(don't forget to add ```Import-Module posh-git``` to your ps1 )
 	
 1. Checkout into a new branch with the given name, replace any spaces with minus (-) sign. 
 	```
