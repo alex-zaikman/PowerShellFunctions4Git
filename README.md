@@ -31,6 +31,7 @@ A few PowerShell functions you can add to your Microsoft.PowerShell_profile.ps1 
 	}
 	New-Alias -Name girm Git-RMBranch
 	```
+	
 1. Just in case you forgot somthing really small before pushing...
 	```
 	function Git-Oops($reg)
@@ -38,5 +39,13 @@ A few PowerShell functions you can add to your Microsoft.PowerShell_profile.ps1 
 		git commit -a --ammend && git push -f 
 	}
 	New-Alias -Name gioo Git-Oops
+	```
 	
+1. Takes ypu back to clean master
+	```
+	function Git-Home($reg)
+	{
+		git checkout master && git fetch --prune && git pull
+	}
+	New-Alias -Name gims Git-Home	 
 	```
