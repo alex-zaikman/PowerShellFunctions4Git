@@ -23,7 +23,7 @@ A few PowerShell functions you can add to your Microsoft.PowerShell_profile.ps1 
 	New-Alias -Name gims Git-Home	 
 	```
 
-1. Revert files by regex
+1. Checks out files by regex
 	```
 	function Git-Revert($reg)
 	{
