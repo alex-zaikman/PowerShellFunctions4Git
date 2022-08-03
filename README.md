@@ -53,7 +53,7 @@ A few PowerShell functions you can add to your Microsoft.PowerShell_profile.ps1 
 	```
 	function Git-Oops($reg)
 	{
-		git commit -a --ammend && git push -f 
+		git commit -a --amend && git push -f 
 	}
 	New-Alias -Name gioo Git-Oops
 	```
