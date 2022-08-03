@@ -51,7 +51,7 @@ New-Alias -Name girm Git-RMBranch
 
 function Git-Oops($reg)
 {
-	git commit -a --ammend && git push -f 
+	git commit -a --amend && git push -f 
 }
 New-Alias -Name gioo Git-Oops
 
