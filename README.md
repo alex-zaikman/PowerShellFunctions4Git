@@ -1,6 +1,6 @@
 # PowerShellFunctions4Git
 A few PowerShell functions you can add to your Microsoft.PowerShell_profile.ps1 file to make working with git a :lollipop:
-1. First I strongly sugest installing and using [ posh-git](https://github.com/dahlbyk/posh-git)
+1. First I strongly sugest installing and using [ posh-git](https://github.com/dahlbyk/posh-git) <br>Installation (run PowerShell as Administrator):
 	```
 	Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm
 	Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
